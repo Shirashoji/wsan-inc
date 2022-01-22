@@ -32,10 +32,7 @@
   "scripts": {
     "dev": "vite",
     "start": "react-scripts start",
-    "predeploy": "npm run ghbuild",
-    "deploy": "gh-pages -d build",
     "build": "PUBLIC_URL=/wsan-inc react-scripts build && rm -r docs; mv build docs",
-    "ghbuild": "react-scripts build",
     "postbuild": "cp docs/index.html docs/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
