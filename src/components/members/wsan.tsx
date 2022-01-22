@@ -4,7 +4,7 @@ import React from 'react'
 const wsan = () => {
     return (
         <>
-            <h1>wsan</h1>
+            <h1>Wsan</h1>
         </>
     )
 }

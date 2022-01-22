@@ -4,7 +4,7 @@ import React from 'react'
 const shirashoji = () => {
     return (
         <>
-            <h1>shirashoji</h1>
+            <h1>Shirashoji</h1>
         </>
     )
 }

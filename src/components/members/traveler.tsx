@@ -4,7 +4,7 @@ import React from 'react'
 const traveler = () => {
     return (
         <>
-            <h1>traveler</h1>
+            <h1>Traveler__</h1>
         </>
     )
 }
