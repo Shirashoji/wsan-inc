@@ -51,10 +51,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="./" element={<MainPage />} />
-          <Route path="./PageA" element={<PageA />} />
-          <Route path="./PageB" element={<PageB />} />;
-          <Route path="./Images" element={<ImageMasonry />} />;
+          <Route path="/" element={<MainPage />} />
+          <Route path="/PageA" element={<PageA />} />
+          <Route path="/PageB" element={<PageB />} />;
+          <Route path="/Images" element={<ImageMasonry />} />;
         </Routes>
       </BrowserRouter>
     </>
@@ -254,7 +254,7 @@ function BasicList() {
       <nav aria-label="main mailbox folders">
         <List>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="/pageA">
+            <ListItemButton component="a" href="./pageA">
               <ListItemIcon>
                 <ArticleIcon />
               </ListItemIcon>
@@ -262,7 +262,7 @@ function BasicList() {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="/pageB">
+            <ListItemButton component="a" href="./pageB">
               <ListItemIcon>
                 <ArticleIcon />
               </ListItemIcon>
@@ -270,7 +270,7 @@ function BasicList() {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="/Images">
+            <ListItemButton component="a" href="./Images">
               <ListItemIcon>
                 <ArticleIcon />
               </ListItemIcon>
