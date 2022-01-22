@@ -4,7 +4,7 @@ import React from 'react'
 const miyazawa = () => {
     return (
         <>
-            <h1>miyazawa</h1>
+            <h1>Miyazawa</h1>
         </>
     )
 }

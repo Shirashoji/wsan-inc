@@ -4,7 +4,7 @@ import React from 'react'
 const cmd = () => {
     return (
         <>
-            <h1>shirashoji</h1>
+            <h1>Chutoro_Detteiu</h1>
         </>
     )
 }
