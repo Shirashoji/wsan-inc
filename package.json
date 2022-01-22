@@ -2,6 +2,7 @@
   "name": "wsan-inc",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://shirashoji.github.io/wsan-inc",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -31,7 +32,7 @@
     "dev": "vite",
     "start": "react-scripts start",
     "build": "PUBLIC_URL=/wsan-inc react-scripts build && rm -r docs; mv build docs",
-    "homepage": "https://shirashoji.github.io/wsan-inc",
+    "postbuild": "cp docs/index.html docs/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
