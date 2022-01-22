@@ -51,7 +51,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<MainPage />} />
+          <Route path="*/*" element={<MainPage />} />
           <Route path="/PageA" element={<PageA />} />
           <Route path="/PageB" element={<PageB />} />;
           <Route path="/Images" element={<ImageMasonry />} />;
