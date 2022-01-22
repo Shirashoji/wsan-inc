@@ -2,7 +2,7 @@
   "name": "wsan-inc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shirashoji.github.io/wsan-inc",
+  "homepage": "https://shirashoji.github.io/wsan-inc/",
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
@@ -20,6 +20,7 @@
     "@types/react-dom": "^16.9.14",
     "@types/react-redux": "^7.1.22",
     "@types/react-router-dom": "^5.3.3",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",
@@ -31,7 +32,10 @@
   "scripts": {
     "dev": "vite",
     "start": "react-scripts start",
+    "predeploy": "npm run ghbuild",
+    "deploy": "gh-pages -d build",
     "build": "PUBLIC_URL=/wsan-inc react-scripts build && rm -r docs; mv build docs",
+    "ghbuild": "react-scripts build",
     "postbuild": "cp docs/index.html docs/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
