@@ -14,11 +14,13 @@ function App() {
       <Navigator>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="PageA" element={<PageA />} />
-            <Route path="PageB" element={<PageB />} />;
-            <Route path="Images" element={<ImageMasonry />} />;
-            <Route path="members/*" element={<Members />} />;
+            <Route path={process.env.PUBLIC_URL}>
+              <Route path="/" element={<MainPage />} />
+              <Route path="PageA" element={<PageA />} />
+              <Route path="PageB" element={<PageB />} />;
+              <Route path="Images" element={<ImageMasonry />} />;
+              <Route path="members/*" element={<Members />} />;
+            </Route>
           </Routes>
         </BrowserRouter>
       </Navigator>
