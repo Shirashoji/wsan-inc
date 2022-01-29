@@ -31,8 +31,9 @@
   },
   "scripts": {
     "dev": "vite --base=/wsan-inc/",
-    "build": "vite build --base=/wsan-inc/ && rm -r docs; mv dist docs",
-    "preview": "vite preview --base=/wsan-inc/"
+    "build": "vite build --base=/wsan-inc/ && rm -r docs; mv build dist",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

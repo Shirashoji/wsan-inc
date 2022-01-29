@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navigator>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter>
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/PageA" element={<PageA />} />
