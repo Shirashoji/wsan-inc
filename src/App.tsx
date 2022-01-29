@@ -14,11 +14,11 @@ function App() {
       <Navigator>
         <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Routes>
-            <Route path="" element={<MainPage />} />
-            <Route path="PageA" element={<PageA />} />
-            <Route path="PageB" element={<PageB />} />;
-            <Route path="Images" element={<ImageMasonry />} />;
-            <Route path="members/*" element={<Members />} />;
+            <Route path="/" element={<MainPage />} />
+            <Route path="/PageA" element={<PageA />} />
+            <Route path="/PageB" element={<PageB />} />;
+            <Route path="/Images" element={<ImageMasonry />} />;
+            <Route path="/members/*" element={<Members />} />;
           </Routes>
         </BrowserRouter>
       </Navigator>
