@@ -33,6 +33,7 @@
     "dev": "vite",
     "start": "react-scripts start",
     "build": "PUBLIC_URL=/wsan-inc react-scripts build && rm -r docs; mv build docs",
+    "homepage": "/wsan-inc",
     "postbuild": "cp docs/index.html docs/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -12,15 +12,13 @@ function App() {
   return (
     <>
       <Navigator>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Routes>
-            <Route path={process.env.PUBLIC_URL}>
-              <Route path="/" element={<MainPage />} />
-              <Route path="PageA" element={<PageA />} />
-              <Route path="PageB" element={<PageB />} />;
-              <Route path="Images" element={<ImageMasonry />} />;
-              <Route path="members/*" element={<Members />} />;
-            </Route>
+            <Route path="/" element={<MainPage />} />
+            <Route path="/PageA" element={<PageA />} />
+            <Route path="/PageB" element={<PageB />} />;
+            <Route path="/Images" element={<ImageMasonry />} />;
+            <Route path="/members/*" element={<Members />} />;
           </Routes>
         </BrowserRouter>
       </Navigator>

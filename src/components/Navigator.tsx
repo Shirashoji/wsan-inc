@@ -115,7 +115,7 @@ const Navigator = ({ children }: Props) => {
           >
             <MenuIcon />
           </IconButton>
-          <Link href="/" color="inherit" underline="none" variant="h6" noWrap component="a">
+          <Link href={process.env.PUBLIC_URL} color="inherit" underline="none" variant="h6" noWrap component="a">
             WSAN Computing
           </Link>
         </Toolbar>
@@ -182,7 +182,7 @@ function MemberList() {
     <>
       <List>
         <ListItem disablePadding>
-          <ListItemButton component="a" href="/members/wsan">
+          <ListItemButton component="a" href={process.env.PUBLIC_URL + "/members/wsan"}>
             <ListItemIcon>
               <ArticleIcon />
             </ListItemIcon>
@@ -190,7 +190,7 @@ function MemberList() {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component="a" href="/members/shirashoji">
+          <ListItemButton component="a" href={process.env.PUBLIC_URL + "/members/shirashoji"}>
             <ListItemIcon>
               <ArticleIcon />
             </ListItemIcon>
@@ -198,7 +198,7 @@ function MemberList() {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component="a" href="/members/Miyazawa">
+          <ListItemButton component="a" href={process.env.PUBLIC_URL + "/members/Miyazawa"}>
             <ListItemIcon>
               <ArticleIcon />
             </ListItemIcon>
@@ -206,7 +206,7 @@ function MemberList() {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component="a" href="/members/Chutoro_Detteiu">
+          <ListItemButton component="a" href={process.env.PUBLIC_URL + "/members/Chutoro_Detteiu"}>
             <ListItemIcon>
               <ArticleIcon />
             </ListItemIcon>
@@ -214,7 +214,7 @@ function MemberList() {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component="a" href="/members/Traveler__">
+          <ListItemButton component="a" href={process.env.PUBLIC_URL + "/members/Traveler__"}>
             <ListItemIcon>
               <ArticleIcon />
             </ListItemIcon>
@@ -232,7 +232,7 @@ function BasicList() {
     <>
       <List>
         <ListItem disablePadding>
-          <ListItemButton component="a" href="/pageA">
+          <ListItemButton component="a" href={process.env.PUBLIC_URL + "/pageA"}>
             <ListItemIcon>
               <ArticleIcon />
             </ListItemIcon>
@@ -240,7 +240,7 @@ function BasicList() {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component="a" href="/pageB">
+          <ListItemButton component="a" href={process.env.PUBLIC_URL + "/pageB"}>
             <ListItemIcon>
               <ArticleIcon />
             </ListItemIcon>
@@ -248,7 +248,7 @@ function BasicList() {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton component="a" href="/Images">
+          <ListItemButton component="a" href={process.env.PUBLIC_URL + "/Images"}>
             <ListItemIcon>
               <ArticleIcon />
             </ListItemIcon>
